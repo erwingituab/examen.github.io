@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'examen2';
+  src:  url('examen2.eot?gxh939');
+  src:  url('examen2.eot?gxh939#iefix') format('embedded-opentype'),
+    url('examen2.ttf?gxh939') format('truetype'),
+    url('examen2.woff?gxh939') format('woff'),
+    url('examen2.svg?gxh939#examen2') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'examen2' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-radio-checked2:before {
+  content: "\ea55";
+}

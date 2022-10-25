@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta author="Erwin Apace Fabricano">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="css/examen.css">
+    <title>Examen</title>    
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <ul>
+                <li><a href="" hreft="#">Inicio</a></li>
+                <li><a href="" hreft="#">Sobre Nosotros</a></li>
+                <li><a href="" hreft="#">Galeria</a></li>
+                <li><a href="" hreft="#">Contacto</a></li>                
+            </ul>
+            <div class="mensaje">
+                <p>Bienvenid(@):</p>
+                <p id="usuario">inicia session...</p>
+            </div>
+        </header>
+        <main>
+            <div class="imagen">
+                <img src="img/vaca.jpg" alt="Vaca">
+            </div>
+            <section>
+                <form id="frmLogin" autocomplete="off" method='post'onsubmit='return reset()'>
+                    <label for="usuario">Iniciar cession</label>
+                    <input type="text" id="txtusuario" placeholder="ingrese nombre usuario">
+                    <input type="submit" id="ingresar" value="Ingresar">
+                    <div class="alert" id="alert" style="display: none;">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong id="strong">Error!</strong> <div id="mensaje"></div>
+                      </div>
+                </form>                
+                <img src="img/braxton.jpg" alt="" width="120px" height="100px">           
+                <article>
+                    <h1>Reproductor 7HO6830 BRAXTON </h1>
+                    <p><h5>Padre:</h5>Ricecrest Lantz-ET</p>
+                    <p><h5>Madre:</h5>Glen Brenda-ET (VG-87)</p>
+                </article>               
+            </section>
+            <section>
+                <ul>
+                    <li><a href="#"><span class="icon icon-star-full"></span>Item1</a></li>
+                    <li><a href="#"><span class="icon icon-heart"></span>item2</a></li>
+                    <li><a href="#"><span class="icon icon-radio-checked2"></span>item3</a></li>
+                    <li><a href="#">item4</a></li>
+                    <li><a href="#">item5</a></li>
+                    <li><a href="#">item6</a></li>
+                </ul>
+                <article>
+                    <p>
+                        Utilice el Reproductor BRAXTON para el mejoramiento de tipo y produccion lehcera en vaquillas de 1 año y medio.
+                    </p>
+                </article>
+                <form id="conversor" autocomplete="off">
+                    <h1>CONVERSOR DOLAR A BS / BS A DOLAR</h1>
+                    <input type="text" id="txtbolivianos" placeholder="Bs" onkeypress="ConversorDolares(this, event)">
+                    <input type="text" id="txtdolares" placeholder="Sus" onkeypress="ConversorBolivianos(this , event)">
+                    <input type="submit" id="convertir" value="Convertir">
+                </form>
+            </section>
+        </main>
+        <footer>
+            
+        </footer>
+    </div>
+    <script src="js/examen.js"></script>
+</body>
+</html>
